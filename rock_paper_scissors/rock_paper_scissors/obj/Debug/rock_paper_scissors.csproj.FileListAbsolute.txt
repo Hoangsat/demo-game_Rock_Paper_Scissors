@@ -1,0 +1,11 @@
+C:\Users\HoangNout\Videos\rock_paper_scissors\rock_paper_scissors\rock_paper_scissors\bin\Debug\rock_paper_scissors.exe.config
+C:\Users\HoangNout\Videos\rock_paper_scissors\rock_paper_scissors\rock_paper_scissors\bin\Debug\rock_paper_scissors.exe
+C:\Users\HoangNout\Videos\rock_paper_scissors\rock_paper_scissors\rock_paper_scissors\bin\Debug\rock_paper_scissors.pdb
+C:\Users\HoangNout\Videos\rock_paper_scissors\rock_paper_scissors\rock_paper_scissors\obj\Debug\rock_paper_scissors.csproj.AssemblyReference.cache
+C:\Users\HoangNout\Videos\rock_paper_scissors\rock_paper_scissors\rock_paper_scissors\obj\Debug\rock_paper_scissors.csproj.SuggestedBindingRedirects.cache
+C:\Users\HoangNout\Videos\rock_paper_scissors\rock_paper_scissors\rock_paper_scissors\obj\Debug\rock_paper_scissors.Form1.resources
+C:\Users\HoangNout\Videos\rock_paper_scissors\rock_paper_scissors\rock_paper_scissors\obj\Debug\rock_paper_scissors.Properties.Resources.resources
+C:\Users\HoangNout\Videos\rock_paper_scissors\rock_paper_scissors\rock_paper_scissors\obj\Debug\rock_paper_scissors.csproj.GenerateResource.cache
+C:\Users\HoangNout\Videos\rock_paper_scissors\rock_paper_scissors\rock_paper_scissors\obj\Debug\rock_paper_scissors.csproj.CoreCompileInputs.cache
+C:\Users\HoangNout\Videos\rock_paper_scissors\rock_paper_scissors\rock_paper_scissors\obj\Debug\rock_paper_scissors.exe
+C:\Users\HoangNout\Videos\rock_paper_scissors\rock_paper_scissors\rock_paper_scissors\obj\Debug\rock_paper_scissors.pdb
