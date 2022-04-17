@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -42,6 +43,10 @@
             this.picture_rock_comp = new System.Windows.Forms.PictureBox();
             this.picture_scissors_comp = new System.Windows.Forms.PictureBox();
             this.picture_paper_comp = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label_message = new System.Windows.Forms.Label();
+            this.label_score = new System.Windows.Forms.Label();
+            this.picture_visible = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -55,6 +60,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picture_rock_comp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_scissors_comp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_paper_comp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_visible)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -106,6 +112,7 @@
             this.picture_rock.TabIndex = 5;
             this.picture_rock.TabStop = false;
             this.picture_rock.Visible = false;
+            this.picture_rock.MouseClick += new System.Windows.Forms.MouseEventHandler(this.picture_rock_MouseClick);
             // 
             // user_panel_scissors
             // 
@@ -129,6 +136,7 @@
             this.picture_scissors.TabIndex = 6;
             this.picture_scissors.TabStop = false;
             this.picture_scissors.Visible = false;
+            this.picture_scissors.MouseClick += new System.Windows.Forms.MouseEventHandler(this.picture_rock_MouseClick);
             // 
             // user_panel_paper
             // 
@@ -152,10 +160,12 @@
             this.picture_paper.TabIndex = 7;
             this.picture_paper.TabStop = false;
             this.picture_paper.Visible = false;
+            this.picture_paper.MouseClick += new System.Windows.Forms.MouseEventHandler(this.picture_rock_MouseClick);
             // 
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.picture_visible);
             this.panel5.Controls.Add(this.picture_rock_comp);
             this.panel5.Controls.Add(this.picture_scissors_comp);
             this.panel5.Controls.Add(this.picture_paper_comp);
@@ -197,16 +207,56 @@
             this.picture_paper_comp.TabStop = false;
             this.picture_paper_comp.Visible = false;
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 200;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // label_message
+            // 
+            this.label_message.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_message.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_message.Location = new System.Drawing.Point(162, 179);
+            this.label_message.Name = "label_message";
+            this.label_message.Size = new System.Drawing.Size(401, 40);
+            this.label_message.TabIndex = 5;
+            this.label_message.Text = "Take Your Figure";
+            this.label_message.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label_score
+            // 
+            this.label_score.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label_score.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_score.Location = new System.Drawing.Point(876, 179);
+            this.label_score.Name = "label_score";
+            this.label_score.Size = new System.Drawing.Size(221, 94);
+            this.label_score.TabIndex = 6;
+            this.label_score.Text = "label2";
+            this.label_score.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // picture_visible
+            // 
+            this.picture_visible.Location = new System.Drawing.Point(0, 0);
+            this.picture_visible.Name = "picture_visible";
+            this.picture_visible.Size = new System.Drawing.Size(187, 126);
+            this.picture_visible.TabIndex = 7;
+            this.picture_visible.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1159, 244);
+            this.ClientSize = new System.Drawing.Size(1194, 307);
+            this.Controls.Add(this.label_score);
+            this.Controls.Add(this.label_message);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.user_panel_scissors);
             this.Controls.Add(this.user_panel_paper);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rock paper scissors";
@@ -223,6 +273,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picture_rock_comp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_scissors_comp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_paper_comp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_visible)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -242,6 +293,10 @@
         private System.Windows.Forms.PictureBox picture_rock_comp;
         private System.Windows.Forms.PictureBox picture_scissors_comp;
         private System.Windows.Forms.PictureBox picture_paper_comp;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label_message;
+        private System.Windows.Forms.Label label_score;
+        private System.Windows.Forms.PictureBox picture_visible;
     }
 }
 
