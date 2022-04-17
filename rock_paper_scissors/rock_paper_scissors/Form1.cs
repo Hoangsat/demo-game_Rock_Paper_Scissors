@@ -19,9 +19,7 @@ namespace rock_paper_scissors
         int score_lose = 0;
         int score_draw = 0;
         string mode = "show";
-        int win = 0;
-        int lose = 0;
-        int draw = 0;
+       
         public Form1()
         {
          
@@ -74,6 +72,7 @@ namespace rock_paper_scissors
 
         private void picture_rock_MouseClick(object sender, MouseEventArgs e)
         {
+            if (mode != "show")
             check_result();
         }
       
@@ -81,8 +80,7 @@ namespace rock_paper_scissors
         {
             if (mode == "game")
             {
-                comp_random_figure();
-                
+                comp_random_figure();            
             }
 
             }
@@ -107,7 +105,9 @@ namespace rock_paper_scissors
         public void check_result()
         {
             mode = "show";
-
+            int win = 0;
+            int lose = 0;
+            int draw = 0;
             picture_visible.Visible = false;
             
             if (comp_figure == user_figure)
